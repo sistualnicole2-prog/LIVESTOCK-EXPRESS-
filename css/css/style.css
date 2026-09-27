@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f7f7f2;
+}
+
+header {
+    background: #234d20;
+    color: white;
+    padding: 15px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+nav h1 {
+    font-size: 22px;
+    white-space: nowrap;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav > a {
+    background: #d99b29;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+section {
+    padding: 70px 8%;
+}
+
+#home {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: #31572c;
+    color: white;
+}
+
+#home h2 {
+    font-size: 50px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+#home p {
+    max-width: 700px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#home a,
+#rates a {
+    display: inline-block;
+    background: #d99b29;
+    color: white;
+    padding: 13px 22px;
+    margin-top: 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section h2 {
+    color: #234d20;
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+section h3 {
+    color: #31572c;
+    margin: 15px 0 8px;
+}
+
+section p {
+    max-width: 900px;
+    margin-bottom: 15px;
+}
+
+#services {
+    background: white;
+}
+
+#services > div {
+    display: inline-block;
+    vertical-align: top;
+    width: 31%;
+    min-height: 180px;
+    margin: 1%;
+    padding: 25px;
+    background: #f0f4e8;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+#services h3 {
+    font-size: 22px;
+}
+
+#profile {
+    background: #eef3e8;
+}
+
+#logistics {
+    background: white;
+}
+
+#logistics > div {
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 5px solid #d99b29;
+    background: #f7f7f2;
+    border-radius: 5px;
+}
+
+#logistics > h3:last-child {
+    background: #234d20;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+#rates {
+    background: #eef3e8;
+}
+
+#rates ul {
+    list-style: none;
+    max-width: 700px;
+}
+
+#rates li {
+    background: white;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border-left: 5px solid #d99b29;
+}
+
+#safety {
+    background: white;
+}
+
+#safety ul,
+#service-area ul {
+    max-width: 700px;
+    padding-left: 25px;
+}
+
+#safety li,
+#service-area li {
+    margin: 8px 0;
+}
+
+#service-area {
+    background: #eef3e8;
+}
+
+#booking {
+    background: white;
+}
+
+form {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+form input,
+form select,
+form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 14px;
+    background: #234d20;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #31572c;
+}
+
+#contact {
+    background: #31572c;
+    color: white;
+}
+
+#contact h2,
+#contact h3 {
+    color: white;
+}
+
+footer {
+    background: #172d16;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+@media (max-width: 900px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    #home h2 {
+        font-size: 38px;
+    }
+
+    #services > div {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 50px 6%;
+    }
+
+    #home {
+        min-height: 500px;
+    }
+
+    #home h2 {
+        font-size: 32px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    nav h1 {
+        font-size: 19px;
+    }
+}
